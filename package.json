@@ -1,0 +1,15 @@
+{
+	"name": "react-app-skeleton",
+	"version": "0.1.14",
+	"description": "react app skeleton command",
+	"main": "index.js",
+	"bin": {
+		"react-app-skeleton": "./bin/skeleton.js"
+	},
+	"keywords": [
+		"react",
+		"react-app-skeleton"
+	],
+	"author": "wqp",
+	"license": "ISC"
+}
