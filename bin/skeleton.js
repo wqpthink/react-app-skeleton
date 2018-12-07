@@ -22,7 +22,11 @@ const project_package = {
         "redux-logger",
         "redux-thunk",
         "styled-components",
-        "antd"
+        "antd",
+        // "style-loader",
+        // "css-loader",
+        "sass-loader",
+        "ts-loader"
     ],
     scripts: {
         "start": "react-app-rewired start",
