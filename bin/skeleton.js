@@ -89,7 +89,8 @@ function process_run(){
     // console.log("react app skeketon structure start, please wait 2-3 minute...");
     // execFile('create-react-app.cmd', [argvs[2]]);
     // biz_root_path = biz_root_path + "\\" + argvs[2] + "\\";
-
+    console.log("react app skeketon structure start add related dependencies, please wait 1-2 minute...");
+    
     //清理业务src目录
     const biz_paths = fs.readdirSync(biz_root_path + "src");
     biz_paths.map(item => {
