@@ -26,7 +26,8 @@ const project_package = {
         // "style-loader",
         // "css-loader",
         "sass-loader",
-        "ts-loader"
+        "ts-loader",
+        "http-proxy-middleware"
     ],
     scripts: {
         "start": "react-app-rewired start",
