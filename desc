@@ -1,0 +1,20 @@
+"prop-types", //react 类型判断库
+"create-react-app" //react 应用判断脚手架
+"react-app-rewired", //react 应用包装第三方库
+"babel-plugin-import", //babel 支持es6
+"axios", //网络请求第三方库
+"history", //页面跳转第三方库 
+"immutable", //防止人为修改reducer数据第三方库
+"react-redux", //
+"react-router-dom", //react路由第三方库
+"redux", //react应用数据管理第三方库
+"redux-immutable",
+"redux-logger", //redux日志管理第三方库
+"redux-thunk", //thunk管理store第三方库
+"styled-components", //样式组件化第三方库
+"antd", //蚂蚁金服UI组件库
+// "style-loader", //babel 编译css style第三方库
+// "css-loader", //babel 编译css 第三方库
+"sass-loader", //babel 编译sass 第三方库
+"ts-loader", // babel 编译ts 第三方库
+"http-proxy-middleware" // 解决跨域请求第三方库
