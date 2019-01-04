@@ -7,11 +7,8 @@ const execFile = require("child_process").execFileSync;
 const project_package = {
     dependencies: [
         "prop-types",
-        "create-react-app"
-    ],
-    devDependencies: [
-        "react-app-rewired",
-        "babel-plugin-import",
+        "create-react-app",
+        "antd",
         "axios",
         "history",
         "immutable",
@@ -19,10 +16,13 @@ const project_package = {
         "react-router-dom",
         "redux",
         "redux-immutable",
-        "redux-logger",
         "redux-thunk",
-        "styled-components",
-        "antd",
+        "styled-components"
+    ],
+    devDependencies: [
+        "react-app-rewired",
+        "babel-plugin-import",
+        "redux-logger",
         // "style-loader",
         // "css-loader",
         "sass-loader",
