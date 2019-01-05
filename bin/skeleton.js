@@ -30,7 +30,7 @@ const project_package = {
         "http-proxy-middleware"
     ],
     scripts: {
-        "start": "react-app-rewired start",
+        "start": "node assembly-reducer.js && react-app-rewired start",
         "build": "react-app-rewired build",
         "test": "react-app-rewired test",
         "eject": "react-scripts eject"
