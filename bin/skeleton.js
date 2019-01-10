@@ -6,7 +6,7 @@ const execFile = require("child_process").execFileSync;
 
 const project_package = {
     dependencies: [
-        "create-react-app",
+        // "create-react-app",
         "prop-types",
         "antd",
         "axios",
@@ -25,9 +25,9 @@ const project_package = {
         "redux-logger",
         // "style-loader",
         // "css-loader",
-        "sass-loader",
-        "ts-loader",
-        "http-proxy-middleware"
+        // "sass-loader",
+        // "ts-loader",
+        // "http-proxy-middleware"
     ],
     scripts: {
         "start": "node assembly-reducer.js && react-app-rewired start",
