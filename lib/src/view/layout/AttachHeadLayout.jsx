@@ -1,5 +1,5 @@
 import React,{PureComponent, Fragment} from 'react';
-import Header from '_common/header/Header';
+import Header from '_common_/header/Header';
 
 /**
  * 附头部布局组件,头部默认高度50px

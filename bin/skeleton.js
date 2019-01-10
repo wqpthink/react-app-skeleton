@@ -6,8 +6,8 @@ const execFile = require("child_process").execFileSync;
 
 const project_package = {
     dependencies: [
-        "prop-types",
         "create-react-app",
+        "prop-types",
         "antd",
         "axios",
         "history",
@@ -38,24 +38,24 @@ const project_package = {
 }
 
 
-const biz_root_path = process.cwd() + "\\";
-const lib_root_path = process.env.NODE_GLOBAL + '\\node_modules\\react-app-skeleton\\lib\\';
+const biz_root_path = process.cwd() + path.sep;
+const lib_root_path = process.env.NODE_GLOBAL + path.sep + 'node_modules' + path.sep + 'react-app-skeleton' + path.sep + 'lib' + path.sep;
 
 /**
  * 迁移
- * @param {*} path
+ * @param {*} pth
  */
-function migrate(path){
-    const stats = fs.statSync(path);
-    const dist = biz_root_path + path.substring(path.indexOf(lib_root_path) + lib_root_path.length, path.length);
+function migrate(pth){
+    const stats = fs.statSync(pth);
+    const dist = biz_root_path + pth.substring(pth.indexOf(lib_root_path) + lib_root_path.length, pth.length);
     if(stats.isFile()){
-        fs.copyFileSync(path, dist);
+        fs.copyFileSync(pth, dist);
     }
     if(stats.isDirectory()){
         fs.existsSync(dist) ? null : fs.mkdirSync(dist);
-        const paths = fs.readdirSync(path);
+        const paths = fs.readdirSync(pth);
         paths.map(item => {
-            migrate(path + "\\" + item);
+            migrate(pth + path.sep + item);
         });
     }
 }
@@ -72,7 +72,7 @@ function sweep(path){
     if(stats.isDirectory()){
         const paths = fs.readdirSync(path);
         paths.map(item => {
-            sweep(path + "\\" + item);
+            sweep(path + path.sep + item);
         });
         fs.rmdirSync(path);
     }
@@ -95,7 +95,7 @@ function process_run(){
     //清理业务src目录
     const biz_paths = fs.readdirSync(biz_root_path + "src");
     biz_paths.map(item => {
-        sweep(biz_root_path + "src\\" + item);
+        sweep(biz_root_path + "src" + path.sep + item);
     });
 
     //迁移工程目录骨架

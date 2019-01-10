@@ -1,6 +1,6 @@
 import React, {PureComponent, Fragment} from "react";
-import Header from '_common/header/Header';
-import SideNav from '_common/sidenav/SideNav';
+import Header from '_common_/header/Header';
+import SideNav from '_common_/sidenav/SideNav';
 import {HeaderAndSideContentWrapper, HeaderAndSideContentChildLeftWrapper, HeaderAndSideContentChildRightWrapper} from './layout-style';
 
 /**
