@@ -15,11 +15,12 @@ const project_package = {
         "react-redux",
         "react-router-dom",
         "redux",
+		"redux-thunk",
         "redux-immutable",
-        "redux-thunk",
         "styled-components"
     ],
     devDependencies: [
+		"customize-cra",
         "react-app-rewired",
         "babel-plugin-import",
         "redux-logger",
