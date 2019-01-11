@@ -8,16 +8,16 @@ const project_package = {
     dependencies: [
         // "create-react-app",
         "prop-types",
-        "antd",
-        "axios",
-        "history",
+        "antd@3.12.1",
+        "axios@0.18.0",
+        "history@4.7.2",
         "immutable",
-        "react-redux",
         "react-router-dom",
-        "redux",
-		"redux-thunk",
-        "redux-immutable",
-        "styled-components"
+        "react-redux@6.0.0",
+        "redux@4.0.1",
+		"redux-thunk@2.3.0",
+        "redux-immutable@4.0.0",
+        "styled-components@4.1.3"
     ],
     devDependencies: [
 		"customize-cra",
